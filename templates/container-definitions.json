@@ -1,0 +1,22 @@
+[
+  {
+    "name": "${name}",
+    "image": "${image}",
+    "cpu": ${cpu},
+    "memory": ${memory},
+    "memoryReservation": ${memory_reservation},
+    "essential": ${essential},
+    "command": ${command},
+    "portMappings": [
+      {
+        "containerPort": ${port},
+        "hostPort": ${host_port},
+        "protocol": "${protocol}"
+      }
+    ],
+    "environment": ${environments},
+    "secrets": ${secrets},
+    "healthCheck": ${health_check},
+    "dockerLabels": ${labels}
+  }
+]
